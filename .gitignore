@@ -1,0 +1,19 @@
+# Sesión de WhatsApp Web — contiene claves privadas, NO compartir
+bot/auth_info/
+
+# Credenciales de Google Service Account — NO compartir
+google-credentials.json
+
+# Variables de entorno con datos personales
+.env
+
+# Datos persistentes del bot (cola, recordatorios, check-ins configurados)
+# Opcional: comentar estas líneas si querés versionar tu configuración
+bot/data/queue.json
+bot/data/reminders.json
+
+# Node
+bot/node_modules/
+
+# Docker
+*.log

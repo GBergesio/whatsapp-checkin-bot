@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker exec:*)",
+      "Bash(docker compose:*)",
+      "Bash(grep -n \"\\\\`\" \"D:/000 - Trabajo Programacion/Cat-app/bot/index.js\")"
+    ]
+  }
+}

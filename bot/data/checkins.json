@@ -1,0 +1,83 @@
+[
+  {
+    "id": "L5KEW",
+    "name": "Chequear piedritas",
+    "cronExpr": "0 10 * * *",
+    "scheduleText": "todos los días a las 10:00",
+    "description": "¿Chequeaste las piedritas?",
+    "options": [
+      {
+        "key": "1",
+        "label": "Sí ✅"
+      },
+      {
+        "key": "2",
+        "label": "No ❌"
+      }
+    ],
+    "createdAt": "2026-04-02T07:10:52.347Z"
+  },
+  {
+    "id": "LFWII",
+    "name": "Comida Mañana",
+    "cronExpr": "5 10 * * *",
+    "scheduleText": "todos los días a las 10:05",
+    "description": "Chequeaste el platito de comida por la mañana?",
+    "options": [
+      {
+        "key": "1",
+        "label": "Sí ✅"
+      },
+      {
+        "key": "2",
+        "label": "No ❌"
+      }
+    ],
+    "createdAt": "2026-04-02T07:20:56.629Z"
+  },
+  {
+    "id": "GFOFT",
+    "name": "Comida noche",
+    "cronExpr": "30 22 * * *",
+    "scheduleText": "todos los días a las 22:30",
+    "description": "Tuviste que rellenar el plato ahora?",
+    "options": [
+      {
+        "key": "1",
+        "label": "Si",
+        "outcome": "done"
+      },
+      {
+        "key": "2",
+        "label": "No",
+        "outcome": "missed"
+      },
+      {
+        "key": "3",
+        "label": "No hizo falta",
+        "outcome": "na"
+      }
+    ],
+    "createdAt": "2026-04-02T07:25:56.770Z"
+  },
+  {
+    "id": "X1H7N",
+    "name": "Pastilla",
+    "cronExpr": "0 19 * * *",
+    "scheduleText": "todos los días a las 19:00",
+    "description": "Tomo la pastilla de las articulaciones?",
+    "options": [
+      {
+        "key": "1",
+        "label": "Sí ✅",
+        "outcome": "done"
+      },
+      {
+        "key": "2",
+        "label": "No ❌",
+        "outcome": "missed"
+      }
+    ],
+    "createdAt": "2026-04-02T18:54:58.045Z"
+  }
+]

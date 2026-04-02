@@ -1,0 +1,23 @@
+services:
+  cat-bot:
+    build: ./bot
+    container_name: cat-bot
+    restart: unless-stopped
+    volumes:
+      - ./bot/auth_info:/app/auth_info
+      - ./bot/data:/app/data
+      - ./google-credentials.json:/app/google-credentials.json:ro
+      - bot_db:/app/db
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    networks:
+      - cat-net
+
+networks:
+  cat-net:
+    driver: bridge
+
+volumes:
+  bot_db:
