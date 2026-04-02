@@ -12,6 +12,11 @@ google-credentials.json
 bot/data/queue.json
 bot/data/reminders.json
 
+# Base de datos SQLite
+*.db
+*.db-shm
+*.db-wal
+
 # Scripts locales
 *.bat
 
