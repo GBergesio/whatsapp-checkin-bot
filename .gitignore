@@ -17,6 +17,10 @@ bot/data/reminders.json
 *.db-shm
 *.db-wal
 
+# Claude Code y archivos internos
+.claude/
+.tasks/
+
 # Scripts locales
 *.bat
 

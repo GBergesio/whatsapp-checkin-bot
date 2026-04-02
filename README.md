@@ -14,6 +14,21 @@ Casos de uso: cuidado de mascotas, medicación, riego de plantas, tareas del hog
 
 ---
 
+## Dashboard Visual
+
+El bot incluye un **Dashboard Web** (basado en un diseño *Bento-style* y *Glassmorphism*) para monitorear el estado en tiempo real, ver resúmenes diarios y disparar acciones manualmente.
+
+![Captura del Dashboard](UI-Dashboard.jpg)
+
+**Características:**
+- **Estado Live**: Uptime del bot y conexión de WhatsApp.
+- **Bento Grid**: Organización visual de check-ins de hoy, bitácora de notas y resumen de ayer.
+- **Rendimiento 7D**: Gráficos de barras que muestran el cumplimiento semanal por tarea.
+- **Acceso Rápido**: Listado interactivo de comandos disponibles.
+- **Acciones Manuales**: Dispará cualquier check-in directamente desde la web.
+
+---
+
 ## Requisitos
 
 - [Docker](https://docs.docker.com/get-docker/) y Docker Compose
@@ -187,7 +202,7 @@ Usá `/nuevo-checkin` y el bot te guía paso a paso:
 └── bot/
     ├── auth_info/              # Sesión de WhatsApp (no subir a git)
     ├── data/
-    │   ├── checkins.json       # Check-ins configurados
+    │   ├── checkins.json       # Check-ins configurados (los del repo son de ejemplo, podés borrarlos con /borrar-checkin o reemplazarlos con /nuevo-checkin)
     │   ├── queue.json          # Cola de check-ins pendientes
     │   └── reminders.json      # Recordatorios activos
     ├── index.js
@@ -227,9 +242,9 @@ docker compose up -d --build
 
 La forma más simple: correlo en tu propia PC o notebook. El bot funciona mientras la máquina esté encendida.
 
-- Accedé al dashboard en `http://localhost:3000`
+- Accedé al dashboard en `http://localhost:3000` (diseño premium, responsivo y modo oscuro por defecto)
 - El QR se escanea una vez y la sesión persiste
-- Ideal para probar, iterar, y ver si el bot se adapta a tu rutina
+- Ideal para monitorear desde tu tablet o PC mientras trabajás
 
 Limitación: si apagás la PC, el bot deja de funcionar hasta que lo volvés a encender.
 
