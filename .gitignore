@@ -12,6 +12,9 @@ google-credentials.json
 bot/data/queue.json
 bot/data/reminders.json
 
+# Scripts locales
+*.bat
+
 # Node
 bot/node_modules/
 
